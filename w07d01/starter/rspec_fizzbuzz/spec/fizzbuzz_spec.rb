@@ -4,6 +4,7 @@ describe Fizzbuzz do
 
 	before(:each) do
 		@fizzbuzz = Fizzbuzz.new
+		@arr = []
 	end
 
 	it 'should return Fizz if given a multiple of 3' do
@@ -23,12 +24,11 @@ describe Fizzbuzz do
 	end
 
 	it 'should return array of given size' do
-		arr = []
-		expect(@fizzbuzz.fizzBuzz(arr, 1, 15).length).to eq 16
+		expect(@fizzbuzz.fizzBuzz(@arr, 1, 15).length).to eq 16
 	end
 
-	it 'should return an array given an empty array and min and max range values' do
-
+	it 'should fill position of array with given element' do
+		expect(@fizzbuzz.fill(0, 2, @arr)).to eq 2
 	end
 
 end
