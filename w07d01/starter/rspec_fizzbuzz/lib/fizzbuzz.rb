@@ -15,7 +15,7 @@ class Fizzbuzz
 		arr[pos] = n
 	end
 
-	def compare n
+	def compare(n)
 
 		if divisible_by?(n, 3, 5)
 			'FizzBuzz'
@@ -29,9 +29,7 @@ class Fizzbuzz
 	end
 
 	def divisible_by?(n, *args)
-		if (n % args[0] == 0 and args[1] == nil) || (n % args[0] == 0 and n % args[1] == 0)
-			true
-		end
+		(n % args[0] == 0 and args[1] == nil) || (n % args[0] == 0 and n % args[1] == 0)
 	end
 end
 
