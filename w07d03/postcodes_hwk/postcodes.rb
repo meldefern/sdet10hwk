@@ -60,26 +60,3 @@ module Postcodes
 	end
 
 end
-# include Postcodes
-
-
-# pc = Postcodes.generate_random_postcode
-
-# p pc
-
-# p pc.get_single_postcode_body
-
-# postcodes = Postcodes::MultiplePostcodes.new(["ig13rn", "ig12rn"])
-
-# p postcodes.get_multiple_postcodes_response_message
-
-# include Postcodes
-
-# postcode = Postcodes.generate_random_postcode
-
-# p postcode
-
-# include Postcodes
-
-# @postcode = Postcodes.generate_random_postcode.downcase
-# @single_postcode = Postcodes::SinglePostcode.new(@postcode)
